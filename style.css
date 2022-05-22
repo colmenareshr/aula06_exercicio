@@ -17,7 +17,42 @@ body {
    min-height: 100vh;
 }
 
-.hero{
+.navbar {
+   background-color: #E2B474;
+   display: grid;
+   grid-template-columns: repeat(8, 1fr);
+   align-items: center;
+}
+
+.navbar .logo {
+   width: 180px;
+   height: 180px;
+   grid-column: 2 / 3;
+}
+
+.navbar .menu {
+   grid-column: 4 / 7;
+   display: flex;
+} 
+
+.navbar ul li {
+   margin-right: 2em;
+   list-style: none;
+}
+
+.navbar a {
+   color: #000;
+   text-decoration: none;
+   font-family: Oswald;
+   font-size: 20px;
+   cursor: pointer;
+}
+
+.navbar a:hover {
+   color: #ad4e34;
+}
+
+.hero {
    position: relative;
    width: 100%;
    min-height: 80vh;
@@ -51,20 +86,16 @@ body {
 
 .contenedor-post {
    width: 100%;
-   max-width: 1200px;
    margin: auto;
-   padding: 90px 0;
-   
+   padding: 90px;
    
    
 }
 
 .posts {
-   
-   
    display: grid;
    grid-template-columns: repeat(4, 1fr);
-   
+   gap: 20px;
    
 }
 
@@ -74,7 +105,7 @@ body {
    height: 80vh;
    margin: auto;
    padding: 60px;
-   background-color: brown;
+   background-color: #AA7D68;
    color: antiquewhite;
 }
 
@@ -85,6 +116,11 @@ body {
    
 }
 
+.contenedor-relacionados h3 {
+   font-size: 30px;
+   font-family: Oswald;
+   text-shadow: #000;
+}
 .noticia {
    display: flex;
    align-items: center;
@@ -94,5 +130,56 @@ body {
    float: left;
    padding-top: 10px;
    padding-right: 10px;
-   
+
+}
+
+.prefooter {
+   width: 100%;
+   height: 500px;
+   background-color: #ad4e34;
+   margin: auto;
+   padding-top: 90px;
+   padding-left: 60px;
+   padding-right: 60px;
+}
+
+.prefooter .contenedor-prefooter {
+   display: grid;
+   grid-template-columns: 3fr 1fr;
+   gap: 50px;
+}
+
+.contenedor-prefooter h3 {
+   font-size: 27px;
+   line-height: 27px;
+   font-family: Oswald;
+   padding-bottom: 10px;
+
+}
+.contenedor-prefooter li {
+   list-style: none;
+}
+
+.contenedor-prefooter a {
+   text-decoration: none;
+   color: #000;
+}
+
+.contenedor-prefooter a:hover {
+   color:#E2B474;
+}
+
+#footer {
+   width: 100%;
+   height: 80px;
+   background-color: #131010;
+   color:antiquewhite;
+   padding-top: 30px;
+   padding-left: 60px;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+}
+
+#footer p {
+   text-align: center;
 }
