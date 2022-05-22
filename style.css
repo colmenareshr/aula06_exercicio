@@ -41,32 +41,56 @@ body {
    color: white;
    position: absolute;
    text-align: center;
-   position: absolute;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
    
 }
-.row:after {
-   content: "";
-   display: table;
-   clear: both;
+
+.contenedor-post {
+   width: 100%;
+   max-width: 1200px;
+   margin: auto;
+   padding: 90px 0;
+   
+   
+   
 }
-.column2{
-   width: 17.5%;
-   align-items: left;
+
+.posts {
+   
+   
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   
+   
 }
-.column3{
-   width: 25%;
+
+.post-relacionados {
+   position: relative;
+   width: 100%;
+   height: 80vh;
+   margin: auto;
+   padding: 60px;
+   background-color: brown;
+   color: antiquewhite;
 }
-.col1{
-   width: 17.5%;
+
+.contenedor-relacionados {
+   display: grid;
+   grid-template-columns: 1fr 1fr 2fr;
+   gap: 20px;
+   
 }
-.column4 {
+
+.noticia {
+   display: flex;
+   align-items: center;
+}
+
+.izquierda {
    float: left;
-   width: 25%;
-}
-#column4{
-   margin-top: 30px;
-   padding: 25 25 25 25;
+   padding-top: 10px;
+   padding-right: 10px;
+   
 }
