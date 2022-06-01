@@ -53,7 +53,8 @@ body {
 
 .navbar a:hover {
   border-radius: 5px;
-  box-shadow: #000;
+  -webkit-box-shadow: 0px 0px 12px 6px #E8C8A0; 
+box-shadow: 0px 0px 12px 6px #E8C8A0;
   background-color: #3B130E;
   color: #ffffff;
   
